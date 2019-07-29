@@ -1,0 +1,45 @@
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+/**
+ * Type 'u' to move from level1 to level2 'd' to move back
+ * 
+ * @author Yinzhe Zhang
+ *
+ */
+
+public class GameBoardListener implements KeyListener {
+
+	private GameBoard GameBoard;
+
+	public GameBoardListener(GameBoard GameBoard) {
+		this.GameBoard = GameBoard;
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		char key = e.getKeyChar();
+		if (key == 'u') {
+			GameBoard.levelChange(GameBoard.getLevel() + 1);
+		}
+		if (key == 'd') {
+			GameBoard.levelChange(GameBoard.getLevel() - 1);
+		}
+		if (key == e.VK_ESCAPE) {
+			GameBoard.Pause();
+		}
+
+	}
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+
+	}
+
+}

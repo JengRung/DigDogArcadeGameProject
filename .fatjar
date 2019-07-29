@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Aug 03 18:15:24 PDT 2018
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=ArcadeGameProject_fat.jar
+manifest.mergeall=true
+manifest.mainclass=Main
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

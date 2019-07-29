@@ -1,0 +1,8 @@
+tuj     : hero attack method, pump(sometimes game freezes)
+
+zhangy16: rework hero movement and GameComponent, hero now always moves w/o lag and at constant speed
+          monster1(monster should turn grayscale before died, not turning grayscale at this point)
+
+shengj1 : Rocks that the player cannot move through
+
+**will create super class for hero and monsters in cycle 3 to improve design
